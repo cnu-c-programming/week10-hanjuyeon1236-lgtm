@@ -3,7 +3,7 @@
 struct access_rights {
   unsigned char execute     :1;
   unsigned char write       :1;
-  unsigned char read        :1l
+  unsigned char read        :1;
 };
 
 union file_access_rights {
