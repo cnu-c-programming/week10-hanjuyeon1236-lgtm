@@ -22,14 +22,14 @@ int main() {
   struct IPv4 s;
   clock_t start, finish;
   start = clock();
-  for (int i = 0; i < le7; i++) {
+  for (int i = 0; i < 1e7; i++) {
        update_val(s);
   }
   finish = clock();
   printf("%f\n", (double)(finish-start)/CLOCKS_PER_SEC);
 
   start = clock();
-  for (int i = 0; i < le7; i++) {
+  for (int i = 0; i < 1e7; i++) {
        update_ptr(&s);
   }
   finish = clock();
