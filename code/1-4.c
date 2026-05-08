@@ -26,7 +26,7 @@ int main() {
        update_val(s);
   }
   finish = clock();
-  printf("%f\n", (double)(finish-start)\CLOCKS_PER_SEC);
+  printf("%f\n", (double)(finish-start)/CLOCKS_PER_SEC);
 
   start = clock();
   for (int i = 0; i < le7; i++) {
